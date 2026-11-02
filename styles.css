@@ -1,0 +1,43 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #172033;
+  background: #ffffff;
+  --accent: #2563eb;
+  --warning: #b91c1c;
+  --muted: #667085;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #fff; }
+button, input, textarea { font: inherit; }
+button { min-height: 44px; min-width: 44px; cursor: pointer; }
+.app { width: min(960px, 100%); margin: 0 auto; padding: 24px 16px 48px; }
+.app-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+h1 { font-size: 1.75rem; margin: 0; }
+.task-title { font-size: 1.25rem; font-weight: 700; }
+.description, .status { color: var(--muted); }
+.button { border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: white; padding: 10px 16px; }
+.button.secondary { color: var(--accent); background: white; }
+.button.warning { border-color: var(--warning); background: var(--warning); }
+.filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.filter { border: 1px solid #ccd3df; border-radius: 6px; background: white; padding: 8px 14px; }
+.filter.active { border-color: var(--accent); background: var(--accent); color: white; }
+.task-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid #e4e7ec; }
+.task-row { width: 100%; border: 0; border-bottom: 1px solid #e4e7ec; background: white; text-align: left; padding: 16px 8px; }
+.task-row.done .task-title { text-decoration: line-through; color: var(--muted); }
+.empty { text-align: center; padding: 48px 16px; color: var(--muted); }
+.form { max-width: 640px; display: grid; gap: 16px; }
+.field { display: grid; gap: 6px; }
+.field input, .field textarea { width: 100%; min-height: 44px; border: 1px solid #98a2b3; border-radius: 6px; padding: 10px; }
+.field textarea { min-height: 120px; resize: vertical; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.error, .announcement.error { color: var(--warning); }
+.announcement { position: fixed; right: 16px; bottom: 16px; max-width: 360px; }
+.detail { display: grid; gap: 16px; }
+.detail h2 { margin: 0; overflow-wrap: anywhere; }
+
+@media (min-width: 768px) {
+  .app { padding: 40px 24px; }
+  h1 { font-size: 2rem; }
+  .task-row { padding-left: 16px; padding-right: 16px; }
+}

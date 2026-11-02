@@ -37,3 +37,24 @@ No es necesario implementar la aplicación en este taller.
 - `requirements/`: especificación inicial.
 - `activities/`: guía de trabajo.
 - `deliverables/`: resultados de los estudiantes.
+
+## Aplicación Curso-PSWE-07
+
+La implementación se encuentra en la raíz de este repositorio.
+
+Desde PowerShell, en la raíz:
+
+```powershell
+npm.cmd test
+npm.cmd start
+```
+
+Después abra `http://localhost:8080`. `npm.cmd start` usa el servidor estático incluido y no requiere dependencias.
+
+## Documentación del proyecto
+
+- [Constitución](.specify/memory/constitution.md)
+- [Especificación](specs/001-task-management/spec.md)
+- [Plan](specs/001-task-management/plan.md)
+- [Tareas](specs/001-task-management/tasks.md)
+- [Revisión de Carlos Montero](deliverables/revision-carlos-montero.md)

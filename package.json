@@ -1,0 +1,12 @@
+{
+  "name": "curso-pswe-07",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}
